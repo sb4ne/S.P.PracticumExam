@@ -24,43 +24,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TableLayout
-        android:id="@+id/detailedWeatherTable"
-        android:layout_width="406dp"
-        android:layout_height="390dp"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="200dp">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
-
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="41dp"
         android:text="Main Screen"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="642dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/ExitButton3"
         android:layout_width="127dp"
         android:layout_height="46dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="43dp"
         android:text="Exit"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="642dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

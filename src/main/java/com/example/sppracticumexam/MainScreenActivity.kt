@@ -14,10 +14,9 @@ class MainScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_screen)
 
-     //declare the items on the Main Screen UI
+        //declare the items on the Main Screen UI
 
         var AppName = findViewById<TextView>(R.id.AppName)
-        var weatherTable = findViewById<TableLayout>(R.id.weatherTable)
         var SecondScreenButton = findViewById<Button>(R.id.SecondScreenButton)
         var ExitButton2 = findViewById<Button>(R.id.ExitButton2)
 

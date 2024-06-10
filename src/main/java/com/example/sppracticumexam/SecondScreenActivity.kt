@@ -17,7 +17,6 @@ class SecondScreenActivity : AppCompatActivity() {
 //declare everything in the UI
 
         var AppName = findViewById<TextView>(R.id.AppName)
-        var detailedWeatherTable = findViewById<TableLayout>(R.id.detailedWeatherTable)
         var backButton = findViewById<Button>(R.id.backButton)
         var ExitButton3 = findViewById<Button>(R.id.ExitButton3)
 
@@ -27,7 +26,7 @@ class SecondScreenActivity : AppCompatActivity() {
             finishAffinity()
         }
 
-//create a r
+//create a return button that takes the user back to the main screen
 
         backButton.setOnClickListener {
             val intent = Intent(this, MainScreenActivity::class.java)
