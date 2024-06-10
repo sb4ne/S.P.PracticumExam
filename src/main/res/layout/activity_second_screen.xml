@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/hd_wallpaper_sunny_day_bright_clouds_color_nature_new_nice_sky_sun"
-    tools:context=".MainScreenActivity">
+    tools:context=".SecondScreenActivity">
 
     <TextView
         android:id="@+id/AppName"
@@ -14,28 +14,22 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="8dp"
         android:fontFamily="casual"
         android:text="Wonderous Weather"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#FFD600"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/weatherTable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:id="@+id/weatherTable"
-        android:layout_width="409dp"
-        android:layout_height="398dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AppName">
+        android:id="@+id/detailedWeatherTable"
+        android:layout_width="406dp"
+        android:layout_height="390dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="200dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -55,33 +49,18 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/SecondScreenButton"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        android:text="Continue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ExitButton2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weatherTable" />
+        android:text="Main Screen"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="642dp" />
 
     <Button
-        android:id="@+id/ExitButton2"
-        android:layout_width="109dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
+        android:id="@+id/ExitButton3"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
         android:text="Exit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/SecondScreenButton"
-        app:layout_constraintTop_toBottomOf="@+id/weatherTable" />
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="642dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
