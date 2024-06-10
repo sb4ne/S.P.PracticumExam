@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hd_wallpaper_sunny_day_bright_clouds_color_nature_new_nice_sky_sun"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_width="347dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="26dp"
+        android:fontFamily="casual"
+        android:text="Wonderous Weather"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFD600"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/MainScreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginBottom="47dp"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/STNumberView" />
+
+    <Button
+        android:id="@+id/ExitButton"
+        android:layout_width="107dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="46dp"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MainScreenButton"
+        app:layout_constraintTop_toBottomOf="@+id/STNumberView" />
+
+    <TextView
+        android:id="@+id/myName"
+        android:layout_width="236dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="137dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Sinamva Peter"
+        android:textColor="#FFD600"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppName" />
+
+    <TextView
+        android:id="@+id/STNumberView"
+        android:layout_width="235dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="138dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="ST10446649"
+        android:textColor="#FFD600"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
